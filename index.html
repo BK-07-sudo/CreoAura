@@ -11,37 +11,33 @@
 <body>
 
     <!-- Navigation Bar -->
-<!-- Navigation Bar -->
-<nav class="navbar">
-    <div class="logo-container">
-        <img src="images/logo.png" alt="CreoAura Logo" class="logo">
-    </div>
-    <div class="search-container">
-        <input type="text" id="search-bar" placeholder="Search services..." onkeyup="showSuggestions()">
-        <div id="suggestions"></div>
-    </div>
-    <div class="nav-links">
-        <button class="nav-button" onclick="location.href='register.html'">Register</button>
-        <button class="nav-button" onclick="location.href='services.html'">Services</button>
-        <button class="nav-button" onclick="location.href='about.html'">About Us</button>
-        <select id="language-selector" onchange="changeLanguage()" class="nav-button">
-            <option value="en">English</option>
-            <option value="ta">தமிழ் (Tamil)</option>
-        </select>
-    </div>
-</nav>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="CreoAura Logo" class="logo">
+        </div>
+        <div class="nav-links">
+            <button class="nav-button" onclick="location.href='register.html'">Register</button>
+            <button class="nav-button" onclick="location.href='services.html'">Services</button>
+            <button class="nav-button" onclick="location.href='about.html'">About Us</button>
+            <select id="language-selector" onchange="changeLanguage()" class="nav-button">
+                <option value="en">English</option>
+                <option value="ta">தமிழ் (Tamil)</option>
+            </select>
+        </div>
+    </nav>
 
-<!-- Thin Line -->
-<hr class="divider">
+    <!-- Thin Line -->
+    <hr class="divider">
 
-<!-- Hero Section -->
-<section class="hero">
-    <h1 id="hero-title">CreoAura: Your Vision, Our Creation.</h1>
-    <p id="hero-welcome">Welcome to CreoAura, where you can bring your Vision to Life.</p>
-    <marquee id="hero-text" behavior="scroll" direction="left" scrollamount="6">
-        Powering your brand with expert Freelancing, Video Editing, Logo Design, Chatbot Creation, and comprehensive Digital Marketing solutions.
-    </marquee>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 id="hero-title">CreoAura: Your Vision, Our Creation.</h1>
+        <p id="hero-welcome">Welcome to CreoAura, where you can bring your Vision to Life.</p>
+        <marquee id="hero-text" behavior="scroll" direction="left" scrollamount="6">
+            Powering your brand with expert Freelancing, Video Editing, Logo Design, Chatbot Creation, and comprehensive Digital Marketing solutions.
+        </marquee>
+    </section>
+
     <!-- Services Section -->
     <section class="services">
         <h2>Our Services</h2>
@@ -52,11 +48,11 @@
             <button class="service-card button-metallic" onmouseover="showDescription('Logo Design',event)">
                 Logo Design
             </button>
-            <button class="service-card button-metallic" onmouseover="showDescription('Chatbot Creation',event)">
-                Chatbot Creation
-            </button>
             <button class="service-card button-metallic" onmouseover="showDescription('Video Editing',event)">
                 Video Editing
+            </button>
+            <button class="service-card button-metallic" onmouseover="showDescription('Chatbot Creation',event)">
+                Chatbot Creation
             </button>
             <button class="service-card button-metallic" onmouseover="showDescription('Digital Marketing',event)">
                 Digital Marketing
@@ -64,6 +60,7 @@
         </div>
         <div id="floating-description"></div>
     </section>
+
     <!-- Testimonials Section -->
     <section class="testimonials" style="margin-top: 40px;">
         <h2 class="testimonials-title">Testimonials</h2>
