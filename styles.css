@@ -1,0 +1,307 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #2c2c2c, #1a1a1a); /* Restored original background */
+    color: white; /* Changed text color to white for better contrast */
+    font-family: 'Open Sans', sans-serif; /* Apply the font to the entire body */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #e8e8e8; /* Ensure this is the same color */
+}
+.nav-links {
+    display: flex;
+    align-items: center; /* Ensure vertical alignment */
+    gap: 15px; /* Space between buttons */
+}
+
+/* General button styles for nav buttons */
+/* General button styles for nav buttons */
+.nav-button {
+    background: black; /* Solid black background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background 0.3s; /* Transition for hover effect */
+}
+
+/* Hover effect for buttons */
+.nav-button:hover {
+    background: #333; /* Darker shade on hover */
+}
+
+/* Thin Line Style */
+.divider {
+    border: none; /* Remove default border */
+    height: 2px; /* Thickness of the line */
+    background-color: #FFD700; /* Color of the line (gold) */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the language selector to match buttons */
+/* Style for the language selector to match buttons */
+#language-selector {
+    appearance: none; /* Remove default styling */
+    background: rgb(0, 0, 0); /* Solid black background */
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 10px 40px 10px 20px; /* Add extra padding on the right for the arrow */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    position: relative; /* Position relative for the custom arrow */
+}
+
+/* Custom arrow for the select */
+#language-selector::after {
+    content: ''; /* Empty content for the arrow */
+    position: absolute;
+    right: 10px; /* Position it inside the select */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for centering */
+    border: solid white; /* Arrow color */
+    border-width: 0 4px 4px 0; /* Arrow shape */
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg); /* Rotate to create a down arrow */
+}
+
+/* Remove default OS styles */
+#language-selector:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+/* Optional: Add a background image for better visibility */
+#language-selector {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polygon points="0,0 10,0 5,5" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Position the arrow */
+    background-size: 10px; /* Size of the arrow */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 75px; /* Height of the logo */
+    width: 150px; /* Increased width for a bigger logo */
+    margin-right: 10px;
+}
+
+/* Search Bar */
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 400px; /* Increased width for the search bar */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: black; /* Changed text color to black for better contrast on light background */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Language Dropdown */
+.nav-links select {
+    background: #444;
+    color: white;
+    border: 1px solid #777;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Remove default OS styles */
+.nav-links select:focus {
+    outline: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #2c2c2c, #1a1a1a); /* Maintain the existing background */
+    color: white; /* Change text color to white for better contrast */
+}
+
+#hero-title {
+    font-size: 2.5em; /* Larger font size for the title */
+    margin-bottom: 10px; /* Space below the title */
+    font-weight: 600; /* Bold weight for emphasis */
+}
+
+#hero-welcome {
+    font-size: 1.2em; /* Slightly larger font for the welcome message */
+    margin-bottom: 20px; /* Space below the welcome message */
+    font-weight: 400; /* Regular weight for body text */
+}
+
+.cta-button {
+    background: #ff6600; /* Call to action button color */
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #e65c00; /* Darker shade on hover */
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 20px 20px; /* Reduced padding to maintain spacing */
+    margin-top: -20px; /* Move the section 20px up */
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.button-metallic {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: linear-gradient(45deg, #d4af37, #b8860b, #ffd700, #f0e68c);
+    background-size: 200% 200%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-position 0.5s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.button-metallic:hover {
+    background-position: 100% 0;
+    transform: translateY(-2px);
+}
+
+/* Floating Description */
+#floating-description {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    font-size: 14px;
+    max-width: 250px;
+    pointer-events: none;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 40px 20px; /* Add padding for the section */
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.testimonials-title {
+    font-size: 2.5em; /* Larger font size for the title */
+    color: #d4af37; /* Metallic gold color */
+    font-family: 'Open Sans', sans-serif; /* Use a suitable font */
+    margin-bottom: 20px; /* Space below the title */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Optional: add a subtle shadow for depth */
+    position: relative; /* Position relative for the pseudo-element */
+}
+
+.testimonials-title::after {
+    content: '';
+    display: block;
+    width: 100px; /* Adjust the width as needed */
+    height: 5px; /* Thickness of the underline */
+    background: linear-gradient(45deg, #d4af37, #b8860b); /* Metallic gold gradient */
+    position: absolute;
+    left: 50%; /* Center the underline */
+    transform: translateX(-50%); /* Adjust for centering */
+    bottom: -10px; /* Position below the title */
+    border-radius: 5px; /* Rounded edges for a softer look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between testimonial cards */
+}
+
+.testimonial-card {
+    margin-top: 20px;
+    background: white; /* White background for each testimonial card */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 220px; /* Fixed width for each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.testimonial-photo {
+    
+    width: 80px; /* Adjusted width of the photo */
+    height: 80px; /* Adjusted height of the photo */
+    border-radius: 50%; /* Make the photo circular */
+    overflow: hidden; /* Hide overflow */
+    margin: 0 auto 20px; /* Center the photo and add space below */
+}
+
+.testimonial-photo img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.testimonial-text {
+    font-size: 14px; /* Font size for testimonial text */
+    margin: 10px 0; /* Space above and below the text */
+    color: black; /* Change text color to black */
+}
+.testimonial-author {
+    font-weight: bold; /* Bold for the author's name */
+    font-size: 15px; /* Smaller font size for the author's name */
+    color: #555; /* Darker color for the author's name */
+    margin-top: 0px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #d3d3d3; /* Changed background color to ash white */
+    padding: 20px;
+    color: black; /* Changed text color to black */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: black; /* Changed social link text color to black */
+    text-decoration: underline;
+}

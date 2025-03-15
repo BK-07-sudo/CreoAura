@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif; /* Classy and elegant font */
+  background: linear-gradient(to right, #2c2c2c, #1a1a1a); /* Background gradient */
+  color: white; /* Changed text color to white for better contrast */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Centered Registration Box */
+.registration-container {
+  background: linear-gradient(135deg, #e8e8e8, #d0d0d0); /* Gradient background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  width: 320px; /* Slightly wider for better layout */
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  animation: fadeIn 0.5s ease; /* Fade-in animation */
+}
+
+h1 {
+  text-align: center;
+  color: #000000; /* Black heading */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000; /* Black text */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px; /* Increased padding for better touch targets */
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #e8e8e8; /* Light gray input background */
+  color: #000000; /* Black text */
+  box-sizing: border-box; /* Include padding in width */
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+select:hover {
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Gold glow effect on hover */
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  outline: none; /* Remove default outline */
+  border-color: #4CAF50; /* Change border color on focus */
+  transform: scale(1.02); /* Slightly scale up on focus */
+}
+
+/* Mobile Number Input */
+.mobile-input {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-input select {
+  width: 25%; /* Reduced width of country code box */
+  margin-right: 8px; /* Adjust spacing */
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.mobile-input input[type="text"] {
+  width: 75%; /* Increased input width */
+  padding: 10px;
+}
+
+/* Register Button with Glossy Metallic Shine */
+button {
+  position: relative; /* Position relative for the shine effect */
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: linear-gradient(45deg, #d4af37, #b8860b, #ffd700, #f0e68c); /* Shiny metallic gradient */
+  background-size: 200% 200%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-position 0.5s ease, transform 0.2s ease; /* Smooth transition */
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Shine Effect */
+button::before {
+  content: ''; /* Empty content for the shine effect */
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 150%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3); /* White shine effect */
+  transform: rotate(30deg);
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover::before {
+  left: 100%; /* Move shine effect across button */
+}
+
+button:hover {
+  background-position: right center;
+  transform: scale(1.05);
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
