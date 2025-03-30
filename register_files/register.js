@@ -22,7 +22,7 @@ document.getElementById("registration-form").addEventListener("submit", async fu
     const gender = document.getElementById("gender").value;
     const mobile = document.getElementById("mobile").value.trim();
     const countryCode = document.getElementById("country-code").value.trim();
-    const service = document.getElementById("services").value;
+    const services = document.getElementById("services").value;
 
     // 4️⃣ Validation checks
     if (!/^[A-Za-z\s]+$/.test(name)) {
@@ -41,7 +41,7 @@ document.getElementById("registration-form").addEventListener("submit", async fu
         alert("Mobile number should be exactly 10 digits.");
         return;
     }
-    if (!service) {
+    if (!services) {
         alert("Please select a service.");
         return;
     }
@@ -49,8 +49,8 @@ document.getElementById("registration-form").addEventListener("submit", async fu
 const created_at = new Date().toISOString().slice(0, 19).replace("T", " ");
 
 // Store data in Supabase table "CreoAura"
-const { data, error } = await supabase.from("CreoAura").insert([
-    { name, email, gender, phone: countryCode + mobile, service, created_at }
+const { data, error } = await supabase.from("creoaura").insert([
+    { name, email, gender, phone: countryCode + mobile, services, created_at }
 ]);
 
     
@@ -60,7 +60,7 @@ const { data, error } = await supabase.from("CreoAura").insert([
         alert("Registration failed! Please try again.");
     } else {
         alert("Registration successful!");
-        console.log("User Registered:", { name, email, gender, phone: countryCode + mobile, service });
+        console.log("User Registered:", { name, email, gender, phone: countryCode + mobile, services });
 
         // Reset form
         document.getElementById("registration-form").reset();

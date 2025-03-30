@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 5px 45px;
     background: #e8e8e8; /* Ensure this is the same color */
 }
 .nav-links {

@@ -1,134 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - CreoAura</title>
-
     <link rel="stylesheet" href="styles.css">
-
     <style>
-        /* Global Styles */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Navigation Bar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #222;
-            padding: 15px 40px;
-        }
-
-        .logo {
-            width: 150px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 15px;
-        }
-
-        .nav-button {
-            background: #444;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-
-        .nav-button:hover {
-            background: #666;
-        }
-
-        .divider {
-            border: 1px solid #ddd;
-            margin: 20px 0;
-        }
-
-        /* About Section */
-        .about-us {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 40px;
-            background: black;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-            color: white;
-        }
-
+        /* Centering the about section box */
         .about-us-container {
-            background: #e8e8e8;
-            padding: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
+            min-height: calc(100vh - 200px); /* Adjust height to center vertically */
+            padding: 20px; /* Add some padding */
         }
 
-        .about-us h2 {
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: white;
+        .about-us {
+            max-width: 800px; /* Set a max width for the box */
+            width: 100%; /* Make it responsive */
+            background: #e8e8e8; /* Light background for contrast */
+            color: rgb(0, 0, 0); /* Text color */
+            padding: 40px; /* Padding inside the box */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            text-align: center; /* Center text horizontally */
         }
 
-        .about-us p {
-            font-size: 18px;
-            line-height: 1.8;
-            text-align: justify;
-            color: white;
-            margin-bottom: 20px;
+        /* Override hover effect for buttons in about.html */
+        .button-metallic:hover {
+            background: linear-gradient(45deg, #d4af37, #b8860b, #ffd700, #f0e68c); /* Keep the original gradient */
+            transform: translateY(-2px); /* Optional: add a slight lift effect */
         }
-
-        /* Call to Action Buttons */
-        .button-container {
-            margin-top: 30px;
-        }
-
-        .button-container .nav-button {
-            font-size: 18px;
-            background: #FFD700;
-            color: black;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .button-container .nav-button:hover {
-            background: #d4af37;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            background: #222;
-            color: white;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        .social-links a {
-            color: #FFD700;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 18px;
-        }
-
-        .social-links a:hover {
-            color: #d4af37;
-        }
-
     </style>
 </head>
 <body>
@@ -156,7 +59,7 @@
         <section class="about-us">
             <h2>About CreoAura</h2>
             <p>
-                At CreoAura, we believe in transforming visions into reality. Founded in [Year], our company has been dedicated to providing top-notch services in freelancing, video editing, logo design, chatbot creation, and digital marketing. Our team consists of highly skilled professionals who are passionate about their work and committed to delivering exceptional results.
+                At CreoAura, we believe in transforming visions into reality. Founded in 2024, our company has been dedicated to providing top-notch services in freelancing, video editing, logo design, chatbot creation, and digital marketing. Our team consists of highly skilled professionals who are passionate about their work and committed to delivering exceptional results.
             </p>
             <p>
                 Our mission is to empower businesses and individuals by providing innovative solutions tailored to their unique needs. We understand that every project is different, and we take the time to listen to our clients, ensuring that we fully understand their goals and objectives. This collaborative approach allows us to create customized strategies that drive success.
@@ -173,8 +76,8 @@
 
             <!-- Call to Action Buttons -->
             <div class="button-container">
-                <button class="nav-button" onclick="location.href='services.html'">Our Services</button>
-                <button class="nav-button" onclick="location.href='register.html'">Register Now</button>
+                <button class="nav-button button-metallic" onclick="location.href='services.html'">Our Services</button>
+                <button class="nav-button button-metallic" onclick="location.href='register.html'">Register Now</button>
             </div>
         </section>
     </div>
